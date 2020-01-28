@@ -2,7 +2,7 @@
     <v-container>
         <v-card dark width="400" min-height="300" @drop.prevent="addFile" @dragover.prevent>
             <v-card-title>
-                To upload your image drop it in this box
+                To upload an image drop it in this box
             </v-card-title>
             <v-img v-if="imgAvailable" :src="url">
                 <v-layout v-if="imgAvailable" align-start justify-end>
