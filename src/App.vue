@@ -5,6 +5,9 @@
                 <v-layout align-center justify-center>
                     <v-spacer/>
                     <img src="./assets/sounce-logo.png" height="40px" width="40px"/>
+                    <span id="sounce-name">
+                        &nbsp;SOUNCE
+                    </span>
                     <v-spacer/>
                     <v-btn color="#000000" class="mx-auto toolbar-button text-none flex-shrink-1"
                            style="border-bottom: #6F77EF solid">
@@ -29,9 +32,21 @@
                 </v-layout>
             </v-toolbar>
 
+<!--        Stupid workaround to add a little space where needed :^)    -->
+            <v-row>
+                <v-col cols="1"/>
+            </v-row>
+
             <v-layout justify-center>
-                <v-card color="#000000" class="flex-shrink-1">
+                <v-card color="#101010" class="flex-shrink-1" dark>
+                    <v-card-title>
+                        Image upload
+                    </v-card-title>
                     <div>
+                        <v-layout justify-center>
+                            Select the gesture you're showing on the photo
+                        </v-layout>
+
                         <v-radio-group dark>
                             <v-row>
                                 <v-spacer/>
@@ -67,15 +82,28 @@
                     </div>
                     <div>
                       <v-layout justify-center>
-                        <v-btn color="#000000" dark>
+                        <v-btn color="#000000" dark x-large>
                           Button for smth
                         </v-btn>
                       </v-layout>
                     </div>
+                    <v-row>
+                        <v-col cols="1"/>
+                    </v-row>
                 </v-card>
             </v-layout>
 
-          <v-footer class="pa-3" absolute color="#000000" dark>
+            <v-row>
+                <v-col cols="1"/>
+            </v-row>
+            <v-row>
+            <v-col cols="1"/>
+            </v-row>
+            <v-row>
+                <v-col cols="1"/>
+            </v-row>
+
+          <v-footer class="pa-3 elevation-12" absolute color="#000000" dark>
             <v-layout justify-center>
               Sounce © {{ new Date().getFullYear() }}. All rights reserved
             </v-layout>
@@ -107,5 +135,9 @@
 
     #app {
         background-color: #000000;
+    }
+
+    #sounce-name {
+        font-size: 32px;
     }
 </style>
